@@ -1,11 +1,11 @@
 import './App.css';
-import  {FilmList}  from './components/FilmList';
+import { MainView } from './components/MainView';
 
 function App() {
   return (
     <>
     <h1>SWAPI</h1>
-    <FilmList/>
+    <MainView/>
     </>
   );
 }
