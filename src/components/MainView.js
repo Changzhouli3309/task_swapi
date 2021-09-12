@@ -11,18 +11,14 @@ export const MainView = () => {
     })
 
     useEffect(() => {
-        fetch('https://swapi.dev/api/films/')
-                .then((res) => res.json())
-                .then((data) => { setFilms(data.results) });
-
-/*         async function fetchFilms() {
+        const getFilmList = async () => {
             const resp = await fetch('https://swapi.dev/api/films/')
             const json = await resp.json()
             const films = json.results;
 
             setFilms(films);
         }
-        fetchFilms(); */
+        getFilmList()
     }, []);
 
 
